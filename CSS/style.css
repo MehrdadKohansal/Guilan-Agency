@@ -3,6 +3,10 @@
     --color-secondary: #fc2c03;
     --color-body: #979c98;
     --color-hero: #000;
+    --font-family: 'Inter', sans-serif,
+                   'Open Sans', sans-serif,
+                   'Poppins', sans-serif;
+    --font-body:   'Arizonia', cursive;
 
 
 }
@@ -13,12 +17,8 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
     color: var(--color-body);
     font-size: 1.5;
-   
 }
 
 
@@ -32,6 +32,7 @@ h2 {
     font-size: 2.4rem;
     color: var(--color-primary);
     margin: 0 0;
+    font-family: var(--font-family);
 }
 
 
@@ -41,6 +42,7 @@ h3 {
     color: var(--color-secondary);
     text-transform: uppercase;
     font-weight: 500;
+    font-family: var(--font-family);
 }
 
 h4 {
@@ -48,6 +50,7 @@ h4 {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .2rem;
+    font-family: var(--font-family);
 }
 
 /* Links */
@@ -55,8 +58,22 @@ h4 {
 a {
     text-decoration: none;
     color: var(--color-primary);
+    font-family: var(--font-family);
 }
 
+/* Collapsible */
+
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .7s ease-in-out;
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    
+}
 
 /* Navigation Bar */
 
@@ -66,8 +83,10 @@ a {
     background: #000;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
+
 
 .nav__logoname, .nav__brand {
     cursor: pointer;
@@ -75,12 +94,8 @@ a {
 
 
 .nav__list {
-    background: #000;
-    left: 0;
     list-style: none;
-    padding: 2rem 0 3rem 2rem;
-    position: absolute;
-    top: 8rem;
+    padding-left: initial;
     width: 100%;
 }
 
@@ -90,28 +105,47 @@ a {
     font-size: 2rem;
 }
 
+.nav__item > a:hover {
+    color: var(--color-secondary);
 
-/* get a hover for list title */
-
-.nav__title {
-    position: relative;
 }
 
+@media screen and (min-width: 1024px) {
+    .nav__brand {
+        display: none;
+    }
 
+    .nav {
+        background: none;
+        position: absolute;
+        z-index: 3;
+        width: 926px;
+        padding-left: 4rem;
+    }
 
-
-/* Collapsible */
-
-/* get a transition for hamburger menu */
-
-.collapsible__content {
-    display: none;
+    .nav__list {
+        width: auto;
+        display: flex;
+        max-height: 100%;
+        gap: 4rem;
+    }
 }
 
-.collapsible--expanded .collapsible__content {
-    display: block;
+@media screen and (min-width: 1440px) {
+    .nav {
+        width: 1070px;
+        padding-left: 18rem;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .nav {
+        padding-left: 43rem;
+    }
     
 }
+
 
 /* Hero */
 
@@ -129,7 +163,7 @@ a {
     background: #000;
     opacity: 2;
     width: 100%;
-    height: 818px;
+    height: 1032px;
     opacity: .4;
 }
 
@@ -139,13 +173,113 @@ a {
    padding-left: 1rem;
 }
 
+.hero-start {
+    font-family: var(--font-body);
+    position: absolute;
+    font-size: 3rem;
+    bottom: 17rem;
+    color: var(--color-secondary);
+}
+
 .hero-text {
     font-size: xx-large;
     line-height: 1.2;
+    width: 221px;
 }
 
 .hero-subject {
     color: var(--color-primary);
     font-size: large;
+    font-family: var(--font-family);
 }
 
+.icon__hero {
+    height: 90px;
+    position: absolute;
+    left: 2rem;
+    bottom: 30rem;
+}
+
+@media screen and (min-width: 768px) {
+    .icon__hero {
+        left: 63rem;
+        top: 3rem;
+    }
+
+    .hero-start{
+        padding-left: 4rem;
+        bottom: 19rem;
+    }
+    
+    .hero-text {
+        width: 382px;
+        padding-left: 4rem;
+        font-size: 4rem;
+    }
+
+    .hero-subject {
+        padding-left: 4rem;
+        width: 395px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .icon__hero {
+        left: 85rem;
+        top: 4rem;
+    }
+
+    .hero-start {
+        bottom: 23rem;
+    }
+    
+    .hero-text {
+        width: 645px;
+        padding-left: 4rem;
+        font-size: 6rem;
+    }
+
+    .hero-subject {
+        padding-left: 4rem;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .icon__hero {
+        left: 121rem;
+        top: 4rem;
+    }
+
+    .hero-start {
+        bottom: 15rem;
+        left: 14rem;
+    }
+    
+    .hero-text {
+        width: 671px;
+        padding-left: 17rem;
+        font-size: 5.7rem;
+    }
+
+    .hero-subject {
+        padding-left: 17rem;
+        width: 700px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        .hero-content {
+            padding-left: 25rem;
+        }
+
+        .hero-start {
+            padding-left: 28rem;
+        }
+
+        .icon__hero {
+            left: 147rem;
+        }
+    }
+}
