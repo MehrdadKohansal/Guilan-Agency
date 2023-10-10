@@ -81,6 +81,8 @@ a {
 
 /* Navigation Bar */
 
+/* js need */
+
 .nav {
     align-items: center;
     background: #000;
@@ -276,6 +278,8 @@ a {
 
 /* Input Main */
 
+/* js need */
+
 .group-input {
     position: relative;
 }
@@ -295,11 +299,16 @@ a {
     color: var(--color-primary);
 }
 
+.input-nav:focus {
+    background: var(--color-primary);
+    color: var(--color-body);
+}
+
 .input-g {
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
-    width: 165px;
+    width: 75%;
     font-size: 1rem;
     position: absolute;
     padding: 2rem 1.5rem 2rem 1.5rem;
@@ -312,6 +321,8 @@ a {
 
 .input-s {
     padding: 0 0 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-sl {
@@ -323,8 +334,13 @@ a {
     margin-top: 1rem;
 }
 
+.input:focus {
+    outline: none;
+}
+
 #input2, #input3 {
     transform: scaleX(-1);
+    text-align: right;
 }
 
 .input-btn-g {
@@ -338,4 +354,112 @@ a {
     color: var(--color-primary);
     font-family: var(--font-family);
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .input-ng {
+        padding-left: 3rem;
+        top: -18.9rem;
+    }
+
+    .input-nav {
+        font-size: 2rem;
+        padding: 1.5rem 4rem;
+    }
+
+    .input-g {
+        margin-left: 3rem;
+        padding: 3rem 2rem 0 2rem;
+        width: 628px;
+        font-size: 1.5rem;
+    }
+
+    .input-s {
+        display: flex;
+        flex-direction: column;    
+    }
+
+    .input {
+        padding: 1rem;
+    }
+
+    #input2, #input3 {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .group-input {
+        margin: 9rem 0;
+        width: 108%;
+    }
+
+    .input-g {
+        width: 83%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .input {
+        padding-right: 0;
+    }
+
+    .input-s {
+        padding: 3rem 4rem;
+        border-left: 1px solid var(--color-body);
+    }
+
+    .input-s:first-child {
+        border-left: none;
+    }
+    
+    .input-btn-g {
+        margin: 0;
+        width: inherit;
+    }
+
+    #input1 {
+        width: 120%;
+    }
+
+
+    .input-sl {
+        width: 12%;
+    }
+
+    .input-sl1 {
+        width: 13%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .input-ng {
+        padding-left: 16rem;
+    }
+
+    .input-g {
+        width: 70%;
+        left: 15rem;
+    }
+
+    .input-btn {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .input-ng {
+        padding-left: 40rem;
+    }
+
+    .input-g {
+        width: 54%;
+        left: 39rem;
+    }
+
+    .input-btn {
+        font-size: 2rem;
+    }
 }
