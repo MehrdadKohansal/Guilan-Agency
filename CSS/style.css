@@ -19,6 +19,7 @@ html {
 body {
     color: var(--color-body);
     font-size: 1.5;
+    font-family: var(--font-family);
 }
 
 
@@ -57,12 +58,15 @@ h4 {
 
 a {
     text-decoration: none;
-    color: var(--color-primary);
     font-family: var(--font-family);
 }
 
-/* Collapsible */
+.nav__item > a {
+    color: var(--color-primary);
+}
 
+
+/* Collapsible */
 
 .collapsible__content {
     max-height: 0;
@@ -282,4 +286,66 @@ a {
             left: 147rem;
         }
     }
+}
+
+/* Input Main */
+
+.input-ng {
+    position: absolute;
+    left: 2rem;
+    top: 50rem;
+}
+
+.input-nav {
+    padding: 1rem;
+    background: var(--color-secondary);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--color-primary);
+}
+
+.input-g {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+    font-size: 1rem;
+    position: absolute;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    left: 2rem;
+    top: 53rem;
+    border-radius: 10px;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.input-s {
+    padding: 0 0 5rem;
+}
+
+.input-sl {
+    padding-bottom: 0;
+}
+
+.input {
+    border: none;
+    margin-top: 1rem;
+}
+
+#input2, #input3 {
+    transform: scaleX(-1);
+}
+
+.input-btn-g {
+    border: none;
+    background: var(--color-secondary);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.input-btn {
+    color: var(--color-primary);
+    font-family: var(--font-family);
+    font-weight: bold;
 }
