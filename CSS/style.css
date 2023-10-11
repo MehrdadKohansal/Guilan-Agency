@@ -1,6 +1,6 @@
 :root {
     --color-primary: #fff;
-    --color-secondary: #fc2c03;
+    --color-secondary: #f15d30;
     --color-body: #979c98;
     --color-hero: #000;
     --font-family: 'Inter', sans-serif,
@@ -54,6 +54,8 @@ h4 {
     font-family: var(--font-family);
 }
 
+
+
 /* Links */
 
 a {
@@ -65,6 +67,9 @@ a {
     color: var(--color-primary);
 }
 
+.main-btn > a {
+    width: 50px;
+}
 
 /* Collapsible */
 
@@ -354,6 +359,7 @@ a {
     color: var(--color-primary);
     font-family: var(--font-family);
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -463,3 +469,132 @@ a {
         font-size: 2rem;
     }
 }
+
+/* Main  */
+
+.main {
+    position: relative;
+}
+
+.main-container {
+    position: absolute;
+    top: 30rem;
+}
+
+.main-start {
+    top: 5rem;
+    left: 3rem;
+    font-size: 2.7rem;
+    width: 200px;
+}
+
+.main-sbj {
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+    width: 250px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: none;
+    color: var(--color-hero);
+}
+
+.main-exp {
+    position: absolute;
+    top: 21rem;
+    left: 3rem;
+    color: var(--color-body);
+    width: 277px;
+    line-height: 3rem;
+}
+
+.main-btn-g {
+    position: absolute;
+    top: 75rem;
+    left: 3rem;
+    width: 188px;
+    padding: 2rem 0;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-secondary);
+}
+
+.main-btn {
+    color: var(--color-primary);
+    font-size: 1.7rem;
+    font-weight: bold;
+
+}
+
+.main-images {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image {
+    background-size: cover;
+    position: absolute;
+    width: 268px;
+    height: 342px;
+    left: 3rem;
+    top: 114rem;
+}
+
+.main-i1 {
+    background-image: url(../images/image1.jpg);
+    top: 114rem;
+}
+
+
+.main-i2 {
+    background-image: url(../images/image2.jpg);
+    top: 152rem;
+}
+
+.main-i3 {
+    background-image: url(../images/image3.jpg);
+    top: 190rem;
+}
+
+.main-i4 {
+    background-image: url(../images/image4.jpg);
+    top: 228rem;
+}
+
+.main-i-h {
+    background: var(--color-secondary);
+    position: absolute;
+    width: 108px;
+    height: 84px;
+    top: 4rem;
+    left: -.5rem;
+}
+
+.main-icon{
+    fill: var(--color-primary);
+    padding: 2rem 3.5rem;
+}
+
+.main-s {
+    position: absolute;
+    text-transform: none;
+    color: var(--color-primary);
+    left: 4rem;
+    letter-spacing: 0;
+    width: 200px;
+}
+
+.main-text {
+    position: absolute;
+    color: var(--color-primary);
+    left: 4rem;
+    top: 13rem;
+    width: 193px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+
+
+
