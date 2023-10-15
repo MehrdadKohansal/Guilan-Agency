@@ -410,7 +410,7 @@ a {
         flex-direction: row;
         justify-content: center;
         padding: 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 13px;;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 13px;
     }
 
     .input {
@@ -1294,7 +1294,206 @@ a {
     }
 }
 
+/* About us */
 
+.about-back {
+    position: relative;
+    height: 310px;
+    top: 250rem;
+    background-image: url(../images/masouleh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.icon__about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-icon {
+    height: 90px;
+}
+
+.about-pic {
+    position: relative;
+    height: 400px;
+    width: 266px;
+    background-image: url(../images/eshtinif.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 7rem;
+    left: 1rem;
+    border: 1.5rem solid var(--color-primary);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 13px;
+}
+
+.about-text {
+    position: relative;
+    padding-left: 2rem;
+    bottom: 5rem;
+}
+
+.about-start {
+    font-family: var(--font-body);
+    color: var(--color-secondary);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.about-header {
+    font-size: 2.5rem;
+    width: 250px;
+    text-transform: none;
+    font-weight: bold;
+    line-height: 1.3;
+    color: var(--color-hero);
+    margin-top: 0;
+}
+
+.about-exp {
+    font-size: large;
+    width: 285px;
+    line-height: 1.5;
+}
+
+.about-btn-g {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-secondary);
+}
+
+.about-btn {
+    color: var(--color-primary);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .about-back {
+        top: 215rem;
+        height: 480px;
+        background-position: right;
+    }
+
+    .about-pic {
+        bottom: 8rem;
+        left: 4rem;
+        width: 310px;
+        height: 850px;
+        background-position: right;
+    }
+    
+    .about-text {
+        padding-left: 43rem;
+        bottom: 82rem;
+    }
+
+    .about-header {
+        font-size: 4rem;
+        width: 300px;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-back {
+        top: 144rem;
+        height: 480px;
+        background-position: right;
+    }
+
+    .about-pic {
+        bottom: 8rem;
+        left: 4rem;
+        width: 430px;
+        height: 675px;
+        background-position: right;
+    }
+    
+    .about-text {
+        padding-left: 58rem;
+        bottom: 65rem;
+    }
+
+    .about-header {
+        font-size: 4rem;
+        width: 350px;
+        margin-bottom: 3rem;
+    }
+
+    .about-exp {
+        width: 421px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-back {
+        top: 130rem;
+        height: 650px;
+        background-position: right;
+    }
+
+    .about-pic {
+        bottom: 12rem;
+        left: 19rem;
+        width: 490px;
+        height: 735px;
+        background-position: right;
+    }
+    
+    .about-text {
+        padding-left: 80rem;
+        bottom: 71rem;
+    }
+
+    .about-header {
+        font-size: 5rem;
+        width: 577px;
+        margin-bottom: 3rem;
+    }
+
+    .about-exp {
+        width: 421px;
+    }
+} 
+
+@media screen and (min-width: 1920px) {
+    .about-back {
+        top: 130rem;
+        height: 650px;
+        background-position: right;
+    }
+
+    .about-pic {
+        bottom: 12rem;
+        left: 43rem;
+        width: 490px;
+        height: 735px;
+        background-position: right;
+    }
+    
+    .about-text {
+        padding-left: 102rem;
+        bottom: 71rem;
+    }
+
+    .about-header {
+        font-size: 5rem;
+        width: 577px;
+        margin-bottom: 3rem;
+    }
+
+    .about-exp {
+        width: 421px;
+    }
+}
 
 
 
