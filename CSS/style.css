@@ -787,11 +787,11 @@ a {
 /* Owl Desitination */
 
 .owl-ds {
-    position: absolute;
+    position: relative;
     background: url(../images/images.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    top: 426rem;
+    top: 227rem;
     width: 320px;
     height: 775px;
 }
@@ -914,7 +914,7 @@ a {
 @media screen and (min-width: 768px) {
     .owl-ds {
         width: 768px;
-        top: 343rem;
+        top: 197rem;
     }
 
     .owl-start {
@@ -948,7 +948,7 @@ a {
 @media screen and (min-width: 1024px) {
     .owl-ds {
         width: 1024px;
-        top: 230rem;
+        top: 124rem;
     }
 
     .owl-text {
@@ -967,7 +967,7 @@ a {
 
     .owl {
         position: relative;
-        right: 12rem;
+        right: 0rem;
     }
 
     .owl-images {
@@ -1003,7 +1003,7 @@ a {
 @media screen and (min-width: 1440px) {
     .owl-ds {
         width: 1440px;
-        top: 212rem;
+        top: 103rem;
     }
 
     .owl-text {
@@ -1022,7 +1022,7 @@ a {
 
     .owl {
         position: relative;
-        right: 34rem;
+        right: 0rem;
     }
 
     .owl-images {
@@ -1058,7 +1058,7 @@ a {
 @media screen and (min-width: 1920px) {
     .owl-ds {
         width: 1920px;
-        top: 212rem;
+        top: 103rem;
     }
 
     .owl-text {
@@ -1077,7 +1077,7 @@ a {
 
     .owl {
         position: relative;
-        right: 15rem;
+        left: 24rem;
         
     }
 
@@ -1111,6 +1111,188 @@ a {
     }
 }
 
+/* Destination */
+
+.dest-header {
+    position: relative;
+    text-align: center;
+    top: 239rem;
+
+}
+
+.dest-start {
+    font-family: var(--font-body);
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.dest-sbj {
+    font-family: var(--font-family);
+    color: var(--color-hero);
+    text-transform: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.dest-images {
+    position: relative;
+    width: 280px;
+    height: 312px;
+    top: 241rem;
+    left: 2rem;
+}
+
+.dest-heading {
+    position: absolute;
+    background: var(--color-secondary);
+    padding: 1rem 1rem;
+    bottom: 26rem;
+    left: 2rem;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.dest-dsc {
+    position: relative;
+    background: var(--color-primary);
+    width: 240px;
+    height: 290px;
+    top: 237rem;
+    left: 4rem;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 10px 13px;
+}
+
+.dest-head {
+    color: var(--color-secondary);
+    padding: 3rem 3rem 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.dest-sbt {
+    color: var(--color-hero);
+    padding: 0 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: none;
+    letter-spacing: 0.1rem;
+}
+
+.dest-icon {
+    fill: var(--color-body);
+}
+
+.dest-p {
+    font-size: 2rem;
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+
+.dest-p1 {
+    font-size: 2rem;
+    padding: 0 3rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    letter-spacing: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .dest-header {
+        top: 206rem;
+    }   
+
+    .dest-start, .dest-sbj {
+        font-size: 4rem;        
+    }
+
+    .dest-content {
+        position: relative;
+        bottom: 36rem;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        row-gap: 1rem;
+    }
+
+    .dest-images {
+        width: 220px;
+    }
+
+    .dest-dsc {
+        width: 180px;
+        height: 310px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dest-header {
+        top: 134rem;
+    }   
+
+    .dest-start, .dest-sbj {
+        font-size: 4rem;        
+    }
+
+    .dest-content {
+        position: relative;
+        bottom: 108rem;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        row-gap: 1rem;
+    }
+
+    .dest-images {
+        width: 295px;
+    }
+
+    .dest-dsc {
+        width: 255px;
+        height: 310px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .dest-header {
+        top: 115rem;
+    }   
+
+    .dest-start, .dest-sbj {
+        font-size: 4rem;        
+    }
+
+    .dest-content {
+        position: relative;
+        bottom: 125rem;
+        right: 17rem;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        row-gap: 1rem;
+        margin-left: 34rem;
+    }
+
+    .dest-images {
+        width: 350px;
+    }
+
+    .dest-dsc {
+        width: 310px;
+        height: 240px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .dest-content {
+        right: 36rem;
+        padding-left: 41rem;
+
+    }
+}
 
 
 
