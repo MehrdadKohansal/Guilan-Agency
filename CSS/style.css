@@ -1405,16 +1405,11 @@ a {
 @media screen and (min-width: 1024px) {
     .about-back {
         top: 144rem;
-        height: 480px;
-        background-position: right;
     }
 
     .about-pic {
-        bottom: 8rem;
-        left: 4rem;
         width: 430px;
         height: 675px;
-        background-position: right;
     }
     
     .about-text {
@@ -1423,9 +1418,7 @@ a {
     }
 
     .about-header {
-        font-size: 4rem;
         width: 350px;
-        margin-bottom: 3rem;
     }
 
     .about-exp {
@@ -1437,7 +1430,6 @@ a {
     .about-back {
         top: 130rem;
         height: 650px;
-        background-position: right;
     }
 
     .about-pic {
@@ -1445,7 +1437,6 @@ a {
         left: 19rem;
         width: 490px;
         height: 735px;
-        background-position: right;
     }
     
     .about-text {
@@ -1454,47 +1445,230 @@ a {
     }
 
     .about-header {
-        font-size: 5rem;
+        font-size: 4rem;
         width: 577px;
-        margin-bottom: 3rem;
-    }
-
-    .about-exp {
-        width: 421px;
     }
 } 
 
 @media screen and (min-width: 1920px) {
-    .about-back {
-        top: 130rem;
-        height: 650px;
-        background-position: right;
-    }
-
     .about-pic {
-        bottom: 12rem;
         left: 43rem;
-        width: 490px;
-        height: 735px;
-        background-position: right;
     }
     
     .about-text {
         padding-left: 102rem;
-        bottom: 71rem;
     }
 
-    .about-header {
-        font-size: 5rem;
-        width: 577px;
-        margin-bottom: 3rem;
+}
+
+/* Tourist FeedBack */
+
+.feedback {
+    position: relative;
+    background-image: url(../images/Talesh\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    top: 352rem;
+}
+
+.feedback-container {
+    position: absolute;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.feedback-header {
+    font-family: var(--font-body);
+    color: var(--color-primary);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.feedback-heading {
+    color: var(--color-primary);
+    font-size: 4rem;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.feedback-content {
+    position: absolute;
+    background-color: var(--color-primary);
+    width: 90%;
+    height: 355px;
+    margin: 7rem 0 0 1.5rem;
+    border-radius: 5px;
+}
+
+.feedback-icon {
+    margin: 3rem 0 0 2rem;
+    text-align: left;
+    letter-spacing: -.5rem;
+}
+
+.feedback-text {
+    text-align: left;
+    margin-left: 2rem;
+    font-size: large;
+    width: 75%;
+    line-height: 1.5;
+}
+
+.feedback-img {
+    background-image: url(../images/feed.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 95px;
+    height: 95px;
+    margin: 3rem 0 0 2rem;
+    border-radius: 0 50% 50% 50%;
+}
+
+.feedback-name {
+    text-transform: none;
+    color: var(--color-hero);
+    font-weight: bold;
+    margin: 0 0 0 11rem;
+}
+
+.feedback-exp {
+    color: var(--color-secondary);
+    margin: .5rem 0 0 11rem;
+    font-size: large;
+    line-height: 1.5;
+}
+
+.feed-dots {
+    text-align: center;
+    margin-top: 23rem;
+    letter-spacing: .5rem;
+}
+
+.feed-dot {
+    width: 10px;
+    height: 11px;
+    background: var(--color-body);
+    border: none;
+    border-radius: 50%;
+}
+
+.feed-dot:focus {
+    background: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+    .feedback {
+        top: 300rem;
     }
 
-    .about-exp {
-        width: 421px;
+    .feedback-container {
+        position: relative;
+        padding-top: 10rem;
+    }
+
+    .feedback-content-f {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 2rem;
+        justify-items: end;
+        width: 95%;
+        overflow: hidden;
+    }
+
+    .feedback-content {
+        position: relative;
+        height: 335px;
+        margin-right: 23rem;
+        padding-left: 1rem;
+    }
+
+    .feedback-text {
+        width: 90%;
+    }
+
+    .feedback-name {
+        width: max-content;
+        padding-top: 2rem;
+    }
+
+    .feedback-exp {
+        width: max-content;
+    }
+
+    .feed-dots {
+        margin-top: 2rem;
     }
 }
 
+
+@media screen and (min-width: 1024px) {
+    .feedback {
+        top: 215rem;
+    }
+
+    .feedback-content-f {
+        margin-left: 2.5rem;
+        justify-items: baseline;
+    }
+
+    .feedback-content {
+        position: relative;
+        height: 367px;
+        margin-right: 17rem;
+        padding-left: 0;
+    }
+
+    .feedback-text {
+        width: 77%;
+    }
+
+    .feedback-name {
+        width: auto;
+        padding-top: 0;
+    }
+
+    .feedback-exp {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .feedback {
+        top: 205rem;
+    }
+
+    .feedback-content-f {
+        margin-left: 17.5rem;
+        width: 77%;
+    }
+
+    .feedback-content {
+        height: 354px;
+    }
+
+    .feedback-text {
+        width: 77%;
+    }
+
+    .feedback-name {
+        width: max-content;
+        padding-top: 2rem;
+    }
+
+    .feedback-exp {
+        width: max-content;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .feedback-content-f {
+        margin-left: 41.5rem;
+        width: 57%;
+    }
+}
 
 
 
