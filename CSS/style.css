@@ -1839,7 +1839,6 @@ a {
 
     .blog-sbj {
         width: 297px;
-        height: 142px;
     }
 
     .blog-text {
@@ -1857,6 +1856,96 @@ a {
         margin-left: 42rem;
     }
 }
+
+/* Ooute */
+
+.qoute-back {
+    position: relative;
+    background-image: url(../images/qoute.jpg);
+    background-position: right;
+    background-size: cover;
+    top: 400rem;
+    width: 280px;
+    height: 265px;
+    margin-left: 2rem;
+}
+
+.qoute-container {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.qoute-header {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.qoute-text {
+    font-size: large;
+    color: lightgray;
+}
+
+.qoute-btn-g {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-secondary);
+}
+
+.qoute-btn {
+    color: var(--color-primary);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .qoute-back {
+        top: 345rem;
+        width: 725px;
+        height: 270px;
+        background-position: bottom;
+    }
+
+    .qoute-container {
+        padding-top: 6rem;
+    }
+
+    .qoute-header {
+        font-size: 2.5rem;
+    }
+
+    .qoute-text {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .qoute-back {
+        top: 265rem;
+        width: 940px;
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .qoute-back {
+        top: 255rem;
+        width: 1075px;
+        margin-left: 18rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .qoute-back {
+        margin-left: 42rem;
+    }
+}
+
+
+
+
+
 
 
 
