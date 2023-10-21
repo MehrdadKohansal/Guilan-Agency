@@ -1,0 +1,129 @@
+
+:root {
+    --color-primary: #fff;
+    --color-secondary: #f15d30;
+    --color-body: #979c98;
+    --color-hero: #000;
+    --font-family: 'Inter', sans-serif,
+                   'Open Sans', sans-serif,
+                   'Poppins', sans-serif;
+    --font-body:   'Arizonia', cursive;
+
+}
+
+
+.about,
+.feedback-about,
+.qoute-about,
+.footer-about {
+    position: relative;
+}
+
+/* Hero */
+
+.image-about {
+    position: static;
+    background-attachment: inherit;
+}
+
+.header-about {
+    position: relative;
+    text-align: center;
+    width: auto;
+    top: 92rem;
+}
+
+.text-about {
+    position: relative;
+    top: 89rem;
+    width: auto;
+    text-align: center;
+    margin: 0;
+}
+
+.text-about > a {
+    color: var(--color-primary);
+    padding-left: 1rem;
+}
+
+.home-about:hover {
+    color: var(--color-secondary);
+}
+
+@media screen and (min-width: 1024px) {
+    .header-about {
+        top: 90rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-about,
+    .text-about {
+        right: 7rem;
+    }
+}
+
+
+/* About Us */
+
+.about {
+    top: 10rem;
+}
+
+
+/* FeedBack */
+
+.feedback-about {
+    top: 105rem;
+}
+
+@media screen and (min-width: 768px) {
+    .feedback-about {
+        top: 95rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feedback-about {
+        top: 80rem;
+    }
+}
+
+
+/* Qoute */
+
+.qoute-about {
+    top: 115rem;
+}
+
+@media screen and (min-width: 768px) {
+    .qoute-about {
+        top: 105rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .qoute-about {
+        top: 90rem;
+    }
+}
+
+
+
+/* Footer */
+
+.footer-about {
+    top: 125rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-about {
+        top: 115rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-about {
+        top: 100rem;
+    }
+}

@@ -8,7 +8,6 @@
                    'Poppins', sans-serif;
     --font-body:   'Arizonia', cursive;
 
-
 }
 
 
@@ -792,7 +791,7 @@ a {
     background: url(../images/images.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    top: 227rem;
+    top: 272rem;
     width: 320px;
     height: 775px;
 }
@@ -1113,6 +1112,10 @@ a {
 }
 
 /* Destination */
+.dest {
+    position: relative;
+    top: 40rem;
+}
 
 .dest-header {
     position: relative;
@@ -1205,6 +1208,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .dest {
+        top: 0;
+    }
+
     .dest-header {
         top: 206rem;
     }   
@@ -1297,10 +1304,11 @@ a {
 
 /* About us */
 
+
 .about-back {
     position: relative;
     height: 310px;
-    top: 250rem;
+    top: 290rem;
     background-image: url(../images/masouleh.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1377,6 +1385,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .about-page {
+        bottom: 250rem;
+
+    }
+
     .about-back {
         top: 215rem;
         height: 480px;
@@ -1404,6 +1417,11 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+    .about-page {
+        bottom: 135rem;
+
+    }
+
     .about-back {
         top: 144rem;
     }
@@ -1428,6 +1446,11 @@ a {
 }
 
 @media screen and (min-width: 1440px) {
+    .about-page {
+        bottom: 115rem;
+
+    }
+
     .about-back {
         top: 130rem;
         height: 650px;
@@ -1471,7 +1494,7 @@ a {
     background-position: center;
     background-size: cover;
     height: 800px;
-    top: 352rem;
+    top: 385rem;
 }
 
 .feedback-container {
@@ -1673,6 +1696,11 @@ a {
 
 /* Blog */
 
+.blog {
+    position: relative;
+    top: 35rem;
+}
+
 .blog-header {
     position: relative;
     text-align: center;
@@ -1769,6 +1797,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .blog {
+        top: 0;
+    }
+
     .blog-header {
         top: 308rem;
     }
@@ -1868,7 +1900,7 @@ a {
     background-image: url(../images/qoute.jpg);
     background-position: right;
     background-size: cover;
-    top: 400rem;
+    top: 435rem;
     width: 280px;
     height: 265px;
     margin-left: 2rem;
@@ -1955,7 +1987,7 @@ a {
     background-size: cover;
     background-position: center;
     height: 1700px;
-    top: 415rem;
+    top: 445rem;
 }
 
 .footer-container {
