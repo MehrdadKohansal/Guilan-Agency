@@ -37,12 +37,12 @@ html {
     position: relative;
     text-align: center;
     width: auto;
-    top: 92rem;
+    top: 83rem;
 }
 
 .text-about {
     position: relative;
-    top: 89rem;
+    top: 80rem;
     width: auto;
     text-align: center;
     margin: 0;
@@ -59,7 +59,7 @@ html {
 
 @media screen and (min-width: 1024px) {
     .header-about {
-        top: 90rem;
+        top: 82rem;
     }
 }
 
