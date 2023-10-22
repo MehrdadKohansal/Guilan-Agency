@@ -1114,16 +1114,13 @@ a {
 /* Destination */
 .dest {
     position: relative;
-    top: 40rem;
+    top: 280rem;
 }
 
 .dest-header {
     position: relative;
     text-align: center;
-    top: 239rem;
-
 }
-
 
 .dest-start {
     font-family: var(--font-body);
@@ -1145,7 +1142,6 @@ a {
     position: relative;
     width: 280px;
     height: 312px;
-    top: 241rem;
     left: 2rem;
 }
 
@@ -1166,7 +1162,7 @@ a {
     background: var(--color-primary);
     width: 240px;
     height: 290px;
-    top: 237rem;
+    bottom: 5rem;
     left: 4rem;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 10px 13px;
 }
@@ -1210,11 +1206,11 @@ a {
 
 @media screen and (min-width: 768px) {
     .dest {
-        top: 0;
+        top: 220rem;
     }
 
     .dest-header {
-        top: 206rem;
+        bottom: 15rem;
     }   
 
     .dest-start, .dest-sbj {
@@ -1223,7 +1219,7 @@ a {
 
     .dest-content {
         position: relative;
-        bottom: 36rem;
+        bottom: 15rem;
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         row-gap: 1rem;
@@ -1240,20 +1236,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-    .dest-header {
-        top: 134rem;
-    }   
+    .dest {
+        top: 150rem;
 
-    .dest-start, .dest-sbj {
-        font-size: 4rem;        
-    }
-
-    .dest-content {
-        position: relative;
-        bottom: 108rem;
-        display: grid;
-        grid-template-columns: repeat(3, 2fr);
-        row-gap: 1rem;
     }
 
     .dest-images {
@@ -1267,21 +1252,12 @@ a {
 }
 
 @media screen and (min-width: 1440px) {
-    .dest-header {
-        top: 115rem;
-    }   
-
-    .dest-start, .dest-sbj {
-        font-size: 4rem;        
+    .dest {
+        top: 130rem;
     }
 
     .dest-content {
-        position: relative;
-        bottom: 125rem;
         right: 17rem;
-        display: grid;
-        grid-template-columns: repeat(3, 2fr);
-        row-gap: 1rem;
         margin-left: 34rem;
     }
 
@@ -1299,7 +1275,6 @@ a {
     .dest-content {
         right: 36rem;
         padding-left: 41rem;
-
     }
 }
 
