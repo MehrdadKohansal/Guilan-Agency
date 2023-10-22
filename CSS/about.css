@@ -15,7 +15,8 @@
 .about,
 .feedback-about,
 .qoute-about,
-.footer-about {
+.footer-about,
+.dest-destination {
     position: relative;
 }
 
@@ -126,4 +127,16 @@
     .footer-about {
         top: 100rem;
     }
+}
+
+/* destination */
+
+.dest-destination {
+    top: -108rem;
+}
+
+/* Input */
+
+.input-destination {
+    
 }
