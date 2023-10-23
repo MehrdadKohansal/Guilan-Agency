@@ -16,6 +16,34 @@ html {
     font-size: 62.5%;
 }
 
+h2, h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: var(--color-primary);
+    margin: 0 0;
+    font-family: var(--font-family);
+}
+
+
+h3 {
+    font-size: 1.7rem;
+    margin: 0 0;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+
+h4 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    font-family: var(--font-family);
+}
 
 
 .about,
@@ -111,6 +139,10 @@ html {
     top: 95rem;
 }
 
+.qoute-contact {
+    top: 0;
+}
+
 @media screen and (min-width: 768px) {
     .qoute-about {
         top: 105rem;
@@ -122,6 +154,10 @@ html {
 
     .qoute-blog {
         top: 100rem;
+    }
+
+    .qoute-contact {
+        top: 0;
     }
 }
 
@@ -136,6 +172,10 @@ html {
 
     .qoute-blog {
         top: 70rem;
+    }
+
+    .qoute-contact {
+        top: 0;
     }
 }
 
@@ -153,7 +193,10 @@ html {
 
 .footer-blog {
     top: 105rem;
+} 
 
+.footer-contact {
+    top: 10rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -168,6 +211,10 @@ html {
     .footer-blog{
         top: 110rem;
     }
+
+    .footer-contact {
+        top: 10rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -181,6 +228,10 @@ html {
 
     .footer-blog{
         top: 80rem;
+    }
+
+    .footer-contact {
+        top: 10rem;
     }
 }
 
@@ -293,3 +344,147 @@ html {
         padding: 0 41rem 0 1rem;
     }
 }
+
+/* Contact Us */
+
+.contact {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-top: 10rem;
+
+}
+
+.contact-container {
+    background-color: #0000000D;
+    text-align: center;
+    padding: 3rem;
+    margin: 0 2rem;
+}
+
+.contact-header {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: none;
+    margin-top: 1rem;
+}
+
+.contact-text {
+    font-size: large;
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .contact-container {
+        width: 100px;
+        margin-right: 0;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-container {
+        width: 165px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact {
+       margin-left: 16rem;
+       width: fit-content;
+    }
+
+    .contact-container {
+        width: 194px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .contact {
+       margin-left: 40rem;
+    }
+}
+
+/* Input */
+
+.input-contact {
+    position: relative;
+    background-color: #0000000D;
+    margin: 5rem 2rem;
+    padding: 5rem 3rem;
+}
+
+.input-container {
+    text-align: center;
+}
+
+.input-content {
+    width: 70%;
+    margin: 1rem 0;
+    padding: 2rem 2rem;
+    font-size: large;
+    border: 1px solid var(--color-body);
+}
+
+.input-content:last-child {
+    padding: 2rem 2rem 20rem;
+}
+
+.contact-btn-g {
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-secondary);
+}
+
+.contact-btn {
+    color: var(--color-primary);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .input-contact {
+        margin: 5rem 2rem 5rem 4rem;
+    }
+
+    .contact-btn-g {
+        margin: 2rem 7rem;
+        width: 78%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-btn-g {
+        margin: 2rem 11rem;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .input-contact {
+        margin: 5rem 18rem 5rem 18rem;
+    }
+
+    .contact-btn-g {
+        margin: 2rem 13rem;
+        width: 74%;
+    }
+} 
+
+@media screen and (min-width: 1920px) {
+    .input-contact {
+        margin: 5rem 42rem 5rem 42rem;
+    }
+}
+
+
+
